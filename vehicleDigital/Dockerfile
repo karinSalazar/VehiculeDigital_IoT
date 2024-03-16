@@ -12,7 +12,7 @@ COPY ./code /usr/src/app/code
 
 # Copiamos el archivo de variables de entorno
 COPY .env_vars /usr/src/app/.env_vars
-
+#COPY requirements.txt /usr/src/app/requirements.txt
 ADD requirements.txt /
 # Instalamos las dependencias necesarias
 RUN pip install -r  /requirements.txt
